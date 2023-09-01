@@ -1,0 +1,66 @@
+{
+  "name": "scpun-form-naiveui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vue/composition-api": "^1.7.2",
+    "@vueuse/core": "^10.4.1",
+    "lodash-es": "^4.17.21",
+    "naive-ui": "^2.34.4",
+    "uuid": "^9.0.0",
+    "vue": "^3.3.4",
+    "vue-i18n": "^9.2.2",
+    "wangeditor": "^4.7.15"
+  },
+  "devDependencies": {
+    "@form-create/naive-ui": "^3.1.23",
+    "@vicons/antd": "^0.12.0",
+    "@vicons/utils": "^0.1.4",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue-jsx": "^3.0.2",
+    "@zmtlwzy/eslint-config": "^0.3.1",
+    "babel-plugin-import": "^1.13.8",
+    "cz-customizable": "^7.0.0",
+    "dotenv": "^16.3.1",
+    "less": "^4.2.0",
+    "moment": "^2.29.4",
+    "stylelint": "^15.10.3",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recommended": "^13.0.0",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-order": "^6.0.3",
+    "typescript": "^5.0.2",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.1",
+    "unplugin-vue-macros": "^2.4.14",
+    "vfonts": "^0.0.3",
+    "vite": "^4.4.5",
+    "vite-plugin-html": "^3.2.0",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vue-tsc": "^1.8.5",
+    "vuedraggable": "^4.1.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.vue": [
+      "eslint --fix"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  }
+}

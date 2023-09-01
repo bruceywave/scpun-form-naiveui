@@ -1,0 +1,46 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"module": "ESNext",
+		"target": "es2016",
+		"lib": ["DOM", "ESNext"],
+		"jsx": "preserve",
+		"strict": true,
+		"allowSyntheticDefaultImports": true,
+		"strictFunctionTypes": false,
+		"moduleResolution": "node",
+		"allowJs": true,
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"types": ["vite/client", "unplugin-vue-macros/macros-global"],
+		"noImplicitAny": false,
+		"skipLibCheck": true,
+		"paths": {
+			"/@/*": ["src/*"],
+			"/#/*": ["types/*"],
+			"@/*": ["src/*"],
+			"#/*": ["types/*"],
+			"root/*": ["./*"]
+		}
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.d.ts",
+		"src/**/*.tsx",
+		"src/**/*.vue",
+		"types/**/*.d.ts",
+		"types/**/*.ts",
+		"build/**/*.ts",
+		"build/**/*.d.ts",
+		"mock/**/*.ts",
+		"vite.config.ts",
+    "example/shims-vue.d.ts",
+    "example/main.ts"
+	],
+	"exclude": ["node_modules", "dist", "**/*.js"]
+}

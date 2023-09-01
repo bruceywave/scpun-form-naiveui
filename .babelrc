@@ -1,0 +1,19 @@
+{
+  "plugins": [
+    [
+      "component",
+      {
+        "libraryName": "Naive-Ui",
+        "styleLibraryName": "theme-chalk"
+      }
+    ],
+    [
+      "import",
+      {
+        "libraryName": "@formily/Naive-Ui",
+        "libraryDirectory": "esm",
+        "style": true
+      }
+    ]
+  ]
+}
