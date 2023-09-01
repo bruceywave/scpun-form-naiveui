@@ -1,8 +1,18 @@
 {
   "name": "scpun-form-naiveui",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
+  "license":"Apache-2.0",
+  "description": "Naive UI Form Designer",
+  "author": {
+    "name": "scpun",
+    "email": "yb2205@outlook.com",
+    "url": "https://www.scpun.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bruceywave/scpun-form-naiveui.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
