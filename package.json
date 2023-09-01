@@ -9,10 +9,21 @@
     "email": "yb2205@outlook.com",
     "url": "https://www.scpun.com"
   },
+  "types": "types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/bruceywave/scpun-form-naiveui.git"
   },
+  "bugs": {
+    "url": "https://github.com/bruceywave/scpun-form-naiveui/issues"
+  },
+  "keywords": [
+    "Vue3",
+    "Html",
+    "Form",
+    "NaiveUI",
+    "scpun-form-naiveui"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
