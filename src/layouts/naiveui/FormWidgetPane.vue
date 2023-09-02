@@ -127,7 +127,7 @@ export default defineComponent({
 
       if (list.length - 1 === index) {
         if (index === 0) {
-          nextTick(() => context.emit('update:widgetFormSelect', null))
+          nextTick(() => context.emit('update:widgetFormSelect', undefined))
         } else {
           context.emit('update:widgetFormSelect', list[index - 1])
         }

@@ -14,12 +14,7 @@ export const widgetForm: WidgetForm = {
 	config: {
     size: "medium",
     hideRequiredMark: false,
-    layout: "horizontal",
     labelAlign: "left",
-    labelCol: {
-      span: 3,
-      offset: 0,
-    },
     inline: false,
     lableWidth: 'auto',
     lablePlacement: "left",

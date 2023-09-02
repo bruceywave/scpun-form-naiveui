@@ -20,13 +20,23 @@
   </n-space>
 </template>
 
-<script setup lang="ts">
-const currentTheme = ref('lightTheme')
+<script lang="ts">
 
-const emits = defineEmits(['updateTheme'])
+export default defineComponent({
+  name: 'FormHeader',
+  emits: ['updateTheme'],
+  setup(_props, context) {
+    const currentTheme = ref('lightTheme')
 
-const handleChangeTheme = function(theme) {
-  currentTheme.value = theme
-  emits('updateTheme', theme)
-}
+    const handleChangeTheme = function (theme) {
+      currentTheme.value = theme
+      context.emit('updateTheme', theme)
+    }
+    return {
+      currentTheme,
+      handleChangeTheme
+    }
+  }
+})
+
 </script>

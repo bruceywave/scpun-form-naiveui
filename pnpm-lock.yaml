@@ -11,6 +11,9 @@ dependencies:
   '@vueuse/core':
     specifier: ^10.4.1
     version: 10.4.1(@vue/composition-api@1.7.2)(vue@3.3.4)
+  highlight.js:
+    specifier: ^11.8.0
+    version: 11.8.0
   lodash-es:
     specifier: ^4.17.21
     version: 4.17.21

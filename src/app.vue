@@ -1,6 +1,6 @@
 
 <template>
-  <n-config-provider :theme="naiveTheme" :locale="locale" :theme-overrides="themeOverrides">
+  <n-config-provider :theme="naiveTheme" :hljs="hljs" :locale="locale" :theme-overrides="themeOverrides">
     <DesignConfigure>
       <NaiveDesignForm @update-theme="changeTheme" />
     </DesignConfigure>
@@ -9,6 +9,7 @@
 </template>
 
 <script setup lang="ts">
+import hljs from 'highlight.js';
 import { darkTheme, lightTheme, useOsTheme } from 'naive-ui';
 import { BuiltInGlobalTheme } from 'naive-ui/es/themes/interface';
 import { NaiveDesignForm } from '../src';
@@ -18,7 +19,7 @@ const naiveTheme = ref<BuiltInGlobalTheme>()
 
 const osThemeRef = useOsTheme()
 
-const locale = getNaiveLocale()
+const locale = getNaiveLocale() as unknown as any
 
 const themeOverrides = ref({
   common: {

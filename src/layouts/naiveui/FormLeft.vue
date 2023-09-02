@@ -30,50 +30,7 @@
       <n-tab-pane name="templates" tab="表单模版" style="padding: 5px;">
         <n-card :content-style="{ padding: '10px' }">
           <n-scrollbar class="designer-left-templates__scrollbar">
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
-            112<br />
+            <n-empty description="表单模版，待开发" />
           </n-scrollbar>
         </n-card>
       </n-tab-pane>

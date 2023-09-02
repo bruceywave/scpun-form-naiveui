@@ -16,15 +16,10 @@ export interface WidgetForm {
 		size: string;
 		hideRequiredMark: boolean;
     inline: boolean;
-		layout: string;
 		labelAlign: string;
     lableWidth: string | number | undefined;
     lablePlacement: string;
     showLabel: boolean;
-		labelCol: {
-			span: number;
-			offset: number;
-		};
 	};
 }
 

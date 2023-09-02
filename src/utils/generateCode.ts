@@ -10,11 +10,18 @@ export default function (
   ${
 		platformType === PlatformType.Antd
 			? `<antd-generate-form ref="generateFormRef" :data="widgetForm">
-  </antd-generate-form>
-  <a-button type="primary" @click="handleSubmit">提交</a-button>`
-			: `<el-generate-form ref="generateFormRef" :data="widgetForm">
-  </el-generate-form>
-  <el-button type="primary" @click="handleSubmit">提交</el-button>`
+        </antd-generate-form>
+        <a-button type="primary" @click="handleSubmit">提交</a-button>`
+			: platformType === PlatformType.NaiveUI ?
+      `<form-generate ref="generateFormRef" :data="widgetForm" />
+        <n-button type="primary" @click="handleSubmit">
+        提交
+        </n-button>
+      `
+      :
+      `<el-generate-form ref="generateFormRef" :data="widgetForm">
+        </el-generate-form>
+        <el-button type="primary" @click="handleSubmit">提交</el-button>`
 	}
 </template>
 
@@ -55,7 +62,8 @@ export default defineComponent({
     ${
 			platformType === PlatformType.Antd
 				? '<link rel="stylesheet" href="https://unpkg.com/ant-design-vue@next/dist/antd.min.css" />'
-				: '<link rel="stylesheet" href="https://unpkg.com/element-plus/lib/theme-chalk/index.css" />'
+				: platformType === PlatformType.NaiveUI ?  '' 
+        :'<link rel="stylesheet" href="https://unpkg.com/element-plus/lib/theme-chalk/index.css" />'
 		}
   </head>
   <body>
@@ -65,19 +73,27 @@ export default defineComponent({
 					? `<antd-generate-form ref="generateFormRef" :data="widgetForm">
       </antd-generate-form>
       <a-button type="primary" @click="handleSubmit">提交</a-button>`
-					: `<el-generate-form ref="generateFormRef" :data="widgetForm">
-      </el-generate-form>
-      <el-button type="primary" @click="handleSubmit">提交</el-button>`
+					: platformType === PlatformType.NaiveUI ?
+          `<form-generate ref="generateFormRef" :data="widgetForm" />
+          <n-button type="primary" @click="handleSubmit">
+          提交
+          </n-button>` :
+          `<el-generate-form ref="generateFormRef" :data="widgetForm">
+          </el-generate-form>
+          <el-button type="primary" @click="handleSubmit">提交</el-button>`
 			}
     </div>
     <script src="https://unpkg.com/vue@next/dist/vue.global.prod.js"></script>
     <script src="https://unpkg.com/vue-form-create/dist/formCreate.umd.min.js"></script>
-    <script src="https://unpkg.com/ace-builds/src-noconflict/ace.js"></script>
     ${
 			platformType === PlatformType.Antd
 				? `<script src="https://unpkg.com/moment/moment.js"></script>
     <script src="https://unpkg.com/ant-design-vue@next/dist/antd.min.js"></script>`
-				: '<script src="https://unpkg.com/element-plus/lib/index.full.js"></script>'
+				: platformType === PlatformType.NaiveUI ?
+    `<script src="https://unpkg.com/moment/moment.js"></script>
+    <script src="https://unpkg.com/naive-ui"></script>
+        ` :
+    '<script src="https://unpkg.com/element-plus/lib/index.full.js"></script>'
 		}
     <script>
       const { createApp, reactive, toRefs } = Vue
@@ -105,7 +121,7 @@ export default defineComponent({
           }
         }
       })
-      .use(${platformType === PlatformType.Antd ? "antd" : "ElementPlus"})
+      .use(${platformType === PlatformType.Antd ? "antd" : platformType === PlatformType.NaiveUI ? `naive` :"ElementPlus"})
       .use(formCreate)
       .mount('#app')
     </script>
