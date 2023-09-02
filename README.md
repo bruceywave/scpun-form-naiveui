@@ -96,6 +96,6 @@
 
 ## 4.部分功能图片预览
 
-![亮色主题](docs/images/preview_light.png)
+![亮色主题](docs/images/preview_light1.png)
 
-![暗色主题](docs/images/preview_dark.png)
+![暗色主题](docs/images/preview_dark1.png)
