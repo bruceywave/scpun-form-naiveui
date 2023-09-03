@@ -7,16 +7,22 @@ export const layoutComponents = [
 			{
 				span: 12,
 				list: [],
+                offset: 0
 			},
 			{
 				span: 12,
 				list: [],
+                offset: 0
 			},
 		],
 		options: {
-			gutter: 0,
-			justify: "start",
-			align: "top",
+            cols: 24,
+            collapsed: false,
+            collapsedRows: 1,
+            responsive: 'self',
+            itemResponsive: false,
+			xGap: 0,
+            yGap: 0,
 		},
 	},
 ];

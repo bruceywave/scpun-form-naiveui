@@ -2,7 +2,7 @@
   <n-space justify="space-between" style="width: 100%;">
     <div class="header-logo">
       <img src="/@/assets/logo.png" />
-      <span class="header-title">Scpun <span>表单设计器 For NaivueUI</span> </span>
+      <span class="header-title">NaivueUI <span>表单设计器</span> </span>
     </div>
     <div style="display: flex; align-items: center; flex: 1; height: 100%;">
       <n-radio-group v-model:value="currentTheme" @update:value="handleChangeTheme">
