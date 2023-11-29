@@ -43,6 +43,7 @@
   "devDependencies": {
     "@form-create/naive-ui": "^3.1.23",
     "@vicons/antd": "^0.12.0",
+    "@vicons/ionicons5": "^0.12.0",
     "@vicons/utils": "^0.1.4",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitejs/plugin-vue-jsx": "^3.0.2",
@@ -51,7 +52,9 @@
     "cz-customizable": "^7.0.0",
     "dotenv": "^16.3.1",
     "less": "^4.2.0",
+    "mitt": "^3.0.1",
     "moment": "^2.29.4",
+    "sortablejs": "^1.15.0",
     "stylelint": "^15.10.3",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-recommended": "^13.0.0",

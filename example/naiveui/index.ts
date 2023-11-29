@@ -10,7 +10,7 @@ import {
 } from "naive-ui";
 
 const naive = create({
-	components: [NButton, NForm, NRow, NCol, NConfigProvider],
+	components: [NButton, NForm, NRow, NCol, NConfigProvider,],
 });
 
 export function setupNaiveui(app) {

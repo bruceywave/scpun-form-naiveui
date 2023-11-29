@@ -1,16 +1,39 @@
-@import 'reset.css';
-@import 'fonts.css';
+@import "reset.css";
+@import "fonts.css";
 
 // 表格的按钮区域
 .table-list-toolbar {
-  button {
-    margin-right: 8px;
-  }
+	button {
+		margin-right: 8px;
+	}
 }
 th.n-data-table-th {
-  text-align: center !important;
+	text-align: center !important;
 }
 
-html, body{
-  overflow: hidden;
+html,
+body {
+	overflow: hidden;
+}
+
+.primary-color {
+	color: var(--app-primary-color);
+}
+
+.background-opacity {
+	background: rgba(64, 158, 255, 0.6);
+}
+
+.form-widget-list {
+	.ghost {
+		content: "";
+		font-size: 0;
+		height: 3px;
+		box-sizing: border-box;
+		background: var(--app-primary-color);
+		border: 2px solid var(--app-primary-color);
+		outline-width: 0;
+		padding: 0;
+		overflow: hidden;
+	}
 }

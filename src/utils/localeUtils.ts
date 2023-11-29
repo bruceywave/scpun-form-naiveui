@@ -2,7 +2,7 @@ import { NDateLocale, NLocale, dateZhCN, zhCN } from "naive-ui";
 import { LocaleSetting } from "../../types/config";
 import { LOCALE } from "../settings/localeSetting";
 
-interface NaiveLocale {
+export interface NaiveLocale {
 	locale: NLocale;
 	dateLocale: NDateLocale;
 }
